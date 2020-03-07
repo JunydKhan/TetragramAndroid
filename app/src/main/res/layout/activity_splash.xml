@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="202dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/textViewWelcome"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/logo_welcome" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewSignIn"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:text="@string/label_welcome"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textInputLayout"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/label_signin_to_continue"
+        android:textColor="@color/colorLightGray"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonContinue"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="42dp"
+        android:hint="@string/hint_enter_pin_here"
+        android:textColorHint="@color/colorBlack"
+        android:theme="@style/TextInputLayoutAppearance"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:singleLine="true"
+            android:text="dfdfd"
+            android:textColor="@color/colorBlack" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/buttonContinue"
+        style="@style/ButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewResendPin"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/label_continue" />
+
+    <TextView
+        android:id="@+id/textViewResendPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/label_resend_pin"
+        android:textColor="@color/colorBlack" />
+
+</RelativeLayout>
+
+    <!--<fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/main_nav_graph" />-->
+

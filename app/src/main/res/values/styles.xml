@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightGray</item>
+        <item name="fontFamily">@font/monsterrat</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="AppTheme">
+        <item name="android:background">@drawable/shape_primary_button</item>
+        <item name="fontFamily">@font/monsterrat</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="fontFamily">@font/monsterrat</item>
+        <item name="colorControlNormal">@color/colorLightGray</item>
+        <item name="colorControlActivated">@color/colorLightGray</item>
+        <item name="colorControlHighlight">@color/colorLightGray</item>
+    </style>
+
+</resources>

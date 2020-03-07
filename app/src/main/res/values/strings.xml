@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TetragramAndroid</string>
+    <string name="label_resend_pin">Resend PIN?</string>
+    <string name="label_continue">Continue</string>
+    <string name="hint_enter_pin_here">Enter your pin here</string>
+    <string name="label_signin_to_continue">Sign in to continue</string>
+    <string name="label_welcome">Welcome,</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_refresh">Refresh</string>
+</resources>
